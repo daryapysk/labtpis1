@@ -1,0 +1,54 @@
+nrel_possession
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-antisymmetric_relation;
+
+=>nrel_main_idtf:
+	[обладание*]
+	(* <- lang_ru;; *);
+	[possession*]
+	(* <- lang_en;; *);
+
+=> nrel_first_domain:
+	concept_person;
+=> nrel_second_domain:
+	concept_appearance;
+	concept_psyche;
+	concept_character;
+	concept_individuality;
+	concept_authority;
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр.(обладание*)]
+		(* <- lang_ru;; *);
+		[Def.(possession*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[обладание* - это отношение, связывающее персону и её свойства.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[possession* is actual use of something, the presence of something in someone- something.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+		concept_person;
+		oriented_relation;
+		binary_relation
+		};;
+	*);;

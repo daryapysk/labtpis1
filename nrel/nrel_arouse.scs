@@ -1,0 +1,48 @@
+nrel_arouse
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-antisymmetric_relation;
+=>nrel_main_idtf:
+	[Вызывание*]
+	(* <- lang_ru;; *);
+	[arouse*]
+	(* <- lang_en;; *);
+
+=> nrel_first_domain:
+	concept_person;
+=> nrel_second_domain:
+	concept_trust;
+	concept_interest;
+
+<-rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр.(Вызывание*)]
+		(* <- lang_ru;; *);
+		[Def.(arouse*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Вызывание* - это отношение, персону и чувства, оказываемые на других.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Defiance* is the attitude, persona, and feelings exerted on others.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+	    concept_person;
+		binary_relation
+		};;
+	*);;

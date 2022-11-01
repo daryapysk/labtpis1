@@ -1,0 +1,28 @@
+concept_authority <- sc_node_not_relation;;
+
+concept_authority => nrel_main_idtf:
+[Авторитет] (*<-lang_ru;;*);
+[authority] (*<-lang_en;;*);;
+
+concept_authority <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Авторитет)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_authority.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_authority <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Авторитет)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Основаниями для авторитета выступают, прежде всего, уважение и доверие.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

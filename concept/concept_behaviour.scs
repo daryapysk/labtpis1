@@ -1,0 +1,28 @@
+concept_behaviour <- sc_node_not_relation;;
+
+concept_behaviour => nrel_main_idtf:
+[Поведение] (*<-lang_ru;;*);
+[Behaviour] (*<-lang_en;;*);;
+
+concept_behaviour <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Поведение)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_behaviour.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_behaviour <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Поведение)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Поведение определяется способностью изменять свои действия под влиянием внутренних и внешних факторов.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

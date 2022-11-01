@@ -1,0 +1,52 @@
+nrel_traits
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-antisymmetric_relation;
+=>nrel_main_idtf:
+	[Черты*]
+	(* <- lang_ru;; *);
+	[traits*]
+	(* <- lang_en;; *);
+
+=> nrel_first_domain:
+	concept_person;
+	concept_personage;
+	concept_individual;
+=> nrel_second_domain:
+	concept_character;
+	concept_psyche;
+	concept_behaviour;
+
+<-rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр.(Черты*)]
+		(* <- lang_ru;; *);
+		[Def.(traits*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Черты* - это отношение, связывающее два концепта по его признакам.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[traits* is a relationship that connects two concepts according to their characteristics.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+		concept_person;
+		oriented_relation;
+		binary_relation
+		};;
+	*);;

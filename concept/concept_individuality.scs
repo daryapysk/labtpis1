@@ -1,0 +1,28 @@
+concept_individuality <- sc_node_not_relation;;
+
+concept_individuality => nrel_main_idtf:
+[Индивидуальность] (*<-lang_ru;;*);
+[individuality] (*<-lang_en;;*);;
+
+concept_individuality <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Индивидуальность)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_individuality.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_individuality <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Индивидуальность)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Индивидуальность проявляется в чертах темперамента, характера, в одежде (внешнем виде), в специфике интересов.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

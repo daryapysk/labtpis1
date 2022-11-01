@@ -1,0 +1,28 @@
+concept_psyche <- sc_node_not_relation;;
+
+concept_psyche => nrel_main_idtf:
+[Психика] (*<-lang_ru;;*);
+[Psyche] (*<-lang_en;;*);;
+
+concept_psyche <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Психика)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_psyche.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_psyche <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Психика)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Особенность психики заключается в отражении объективной реальности, что предполагает возможность живого организма создавать своеобразные копии этой реальности.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,28 @@
+concept_appearance <- sc_node_not_relation;;
+
+concept_appearance => nrel_main_idtf:
+[Внешность] (*<-lang_ru;;*);
+[appearance] (*<-lang_en;;*);;
+
+concept_appearance <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Внешность)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_appearance.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_appearance <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Внешность)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Если вы пытаетесь изменить свою внешность, чтобы привлечь чье-то внимание, будьте осторожны и не забывайте оставаться собой.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

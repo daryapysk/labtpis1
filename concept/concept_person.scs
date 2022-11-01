@@ -1,0 +1,28 @@
+concept_person <- sc_node_not_relation;;
+
+concept_person => nrel_main_idtf:
+[Персона] (*<-lang_ru;;*);
+[Person] (*<-lang_en;;*);;
+
+concept_person <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Персона)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_person.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_person <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Персона)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Персона (лат. persona – актерская маска). Термин возник как обозначение маски, которую надевал актер в театральной постановке для определения играемой им роли](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

@@ -1,0 +1,26 @@
+Obama
+<- concept_impression;
+
+=> nrel_main_idtf:
+   [Обама]
+   (* <- lang_ru;; *);
+=> nrel_idtf:
+   [Обама]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Obama]
+   (* <- lang_en;; *);
+
+<= nrel_division: politician;
+=> nrel_definition: Chaleric;
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. Обама](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: [Обама - один из президентов США.](*<-lang_ru;;*);;
+	*);;
+*);;

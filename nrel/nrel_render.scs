@@ -1,0 +1,49 @@
+nrel_render
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-antisymmetric_relation;
+
+=>nrel_main_idtf:
+	[Оказывание*]
+	(* <- lang_ru;; *);
+	[render*]
+	(* <- lang_en;; *);
+
+=> nrel_first_domain:
+	concept_person;
+=> nrel_second_domain:
+	concept_influence;
+
+<-rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр.(Оказывание*)]
+		(* <- lang_ru;; *);
+		[Def.(render*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Оказывание* - это отношение, связывающее персону и влияние, т.е персона может оказывать влияние на различные сферы жизни.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Render* is an attitude that connects persona and influence, i.e. a person can have an impact on various spheres of life.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+		concept_person;
+		oriented_relation;
+		binary_relation
+		};;
+	*);;

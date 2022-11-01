@@ -1,0 +1,28 @@
+concept_influencer <- sc_node_not_relation;;
+
+concept_influencer => nrel_main_idtf:
+[ Инфлюенсер] (*<-lang_ru;;*);
+[influencer] (*<-lang_en;;*);;
+
+concept_influencer <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. ( Инфлюенсер)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_influencer.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_influencer <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. ( Инфлюенсер)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[ Чаще всего инфлюенсер является еще блогером и взаимодействует со своей аудиторией через соцсети (Instagram, YouTube, TikTok).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

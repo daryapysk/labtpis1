@@ -1,0 +1,28 @@
+concept_interest <- sc_node_not_relation;;
+
+concept_interest => nrel_main_idtf:
+[Интерес] (*<-lang_ru;;*);
+[interest] (*<-lang_en;;*);;
+
+concept_interest <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Интерес)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_interest.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_interest <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Интерес)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Интерес тесно связан с собственно человеческим уровнем освоения действительности в форме знаний и развертывается преимущественно во внутреннем плане.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

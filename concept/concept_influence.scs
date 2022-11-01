@@ -1,0 +1,28 @@
+concept_influence <- sc_node_not_relation;;
+
+concept_influence => nrel_main_idtf:
+[Влияние] (*<-lang_ru;;*);
+[influence] (*<-lang_en;;*);;
+
+concept_influence <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Влияние)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_influence.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_influence <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Влияние)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Влияние может оказываться в различных областях.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

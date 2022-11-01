@@ -1,0 +1,28 @@
+concept_politician <- sc_node_not_relation;;
+
+concept_politician => nrel_main_idtf:
+[Политик] (*<-lang_ru;;*);
+[politician] (*<-lang_en;;*);;
+
+concept_politician <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. ( Политик)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_politician.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_politician <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. ( Политик)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[ Основная служебная обязанность политиков - голосовать за законопроекты и разрабатывать их.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

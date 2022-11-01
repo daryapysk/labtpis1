@@ -1,0 +1,16 @@
+concept_importance <- sc_node_not_relation;;
+
+concept_importance => nrel_main_idtf:
+[Важность] (*<-lang_ru;;*);
+[importance] (*<-lang_en;;*);;
+
+concept_importance <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Важность)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_importance.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;

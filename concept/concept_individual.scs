@@ -1,0 +1,28 @@
+concept_individual <- sc_node_not_relation;;
+
+concept_individual => nrel_main_idtf:
+[Индивид] (*<-lang_ru;;*);
+[individual] (*<-lang_en;;*);;
+
+concept_individual <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Индивид)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_individual.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_individual <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Индивид)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Люди как индивиды представляют собой комплекс природных генетически зависимых качеств, формирование которых реализуется в период онтогенеза, итогом чего делается биологическая зрелость людей.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

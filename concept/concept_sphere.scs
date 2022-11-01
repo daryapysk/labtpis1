@@ -1,0 +1,28 @@
+concept_sphere <- sc_node_not_relation;;
+
+concept_sphere => nrel_main_idtf:
+[Сфера] (*<-lang_ru;;*);
+[sphere] (*<-lang_en;;*);;
+
+concept_sphere <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Сфера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_sphere.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_sphere <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Сфера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Высшие сферы (о правящих, аристократических кругах).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

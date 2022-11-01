@@ -1,0 +1,28 @@
+Kylie_Jenner
+<- concept_person;
+<- concept_influencer;
+<- concept_celebrity;
+
+=> nrel_main_idtf:
+   [Кайли Дженнер]
+   (* <- lang_ru;; *);
+=> nrel_idtf:
+   [Кайли Дженнер]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Kylie_Jenner]
+   (* <- lang_en;; *);
+
+<= nrel_position: Celebrity;
+=> nrel_possession: beautiful_woman
+
+<-rrel_key_sc_element:...
+(*
+	<-definition;;
+	=>nrel_main_idtf:
+		[Опр. Кайли Дженнер](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+		->rrel_example: [Кайли Дженнер - это девушка, являющаяся самым молодым биллионером, построила свою косметическую империю.](*<-lang_ru;;*);;
+	*);;
+*);;
