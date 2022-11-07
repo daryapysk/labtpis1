@@ -14,7 +14,7 @@ Kylie_Jenner
    (* <- lang_en;; *);
 
 <= nrel_position: Celebrity;
-=> nrel_possession: beautiful_woman
+=> nrel_possession: beautiful_woman;
 
 <-rrel_key_sc_element:...
 (*
