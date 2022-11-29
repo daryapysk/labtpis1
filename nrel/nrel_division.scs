@@ -12,14 +12,9 @@ nrel_division
 	[division*]
 	(* <- lang_en;; *);
 
-=> nrel_first_domain:
-	concept_person;
-=> nrel_second_domain:
-	concept_politician;
-	concept_individual;
-	concept_personage;
-	concept_human;
-	concept_celebrity;
+nrel_division
+=>nrel_first_domain:concept_influencer;
+=>nrel_second_domain:concept_text_file;
 
 <-rrel_key_sc_element:
 	...

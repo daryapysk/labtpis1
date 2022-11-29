@@ -1,0 +1,29 @@
+rrel_sphere
+<- sc_node_role_relation;
+=>nrel_main_idtf:
+  [сфера_влияния'](* <- lang_ru;; *);
+  [sphere'](* <- lang_eng;; *);;
+
+rrel_sphere <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [Опр. (сфера_влияния')](*<- lang_ru;;*);
+    [Def. (sphere')](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [сфера_влияния' — отношение, показывающее к какой сфере относится персона.](*<- lang_ru;;*);; 
+        -> rrel_example: 
+            [sphere' — is a relation showing which to which sphere person belongs to.](*<- lang_en;;*);;
+    *);;
+*);;
+
+rrel_sphere
+=>nrel_first_domain:concept_sphere;
+=>nrel_second_domain:concept_influencer;
+
+<- binary_relation ;
+<- antireflexive_relation ;
+<- antitransitive_relation ;;

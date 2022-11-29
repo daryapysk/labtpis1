@@ -1,0 +1,29 @@
+rrel_position
+<- sc_node_role_relation;
+=>nrel_main_idtf:
+  [позиция в обществе'](* <- lang_ru;; *);
+  [position'](* <- lang_eng;; *);;
+
+rrel_position <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [Опр. (позиция в обществе')](*<- lang_ru;;*);
+    [Def. (position')](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [позиция в обществе' — отношение, позицию персоны в обществе.](*<- lang_ru;;*);; 
+        -> rrel_example: 
+            [position' — is a relation person's position.](*<- lang_en;;*);;
+    *);;
+*);;
+
+rrel_position
+=>nrel_first_domain:concept_person;
+=>nrel_second_domain:concept_influencer;
+
+<- binary_relation ;
+<- antireflexive_relation ;
+<- antitransitive_relation ;;

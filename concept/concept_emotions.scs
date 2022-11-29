@@ -1,0 +1,16 @@
+concept_emotions <- sc_node_not_relation;;
+
+concept_emotions => nrel_main_idtf:
+[Эмоции] (*<-lang_ru;;*);
+[emotions] (*<-lang_en;;*);;
+
+concept_emotions <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Эмоции)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_emotions.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;

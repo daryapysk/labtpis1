@@ -1,28 +1,44 @@
 Kylie_Jenner
 <- concept_person;
-<- concept_influencer;
-<- concept_celebrity;
-
+<- concept_human;
 => nrel_main_idtf:
-   [Кайли Дженнер]
-   (* <- lang_ru;; *);
-=> nrel_idtf:
-   [Кайли Дженнер]
-   (* <- lang_ru;; *);
-=> nrel_main_idtf:
-   [Kylie_Jenner]
-   (* <- lang_en;; *);
+	   [Кайли Дженнер](* <- lang_ru;; *);
+       [Kylie Jenner](* <-lang_en;; *);
 
-<= nrel_position: Celebrity;
-=> nrel_possession: beautiful_woman;
+=> nrel_note:
+   [Кайли Дженнер - известна во всём мире]
+   (* <- lang_ru;; *);
 
-<-rrel_key_sc_element:...
-(*
-	<-definition;;
-	=>nrel_main_idtf:
-		[Опр. Кайли Дженнер](*<-lang_ru;;*);;
-	<=nrel_sc_text_translation:...
-	(*
-		->rrel_example: [Кайли Дженнер - это девушка, являющаяся самым молодым биллионером, построила свою косметическую империю.](*<-lang_ru;;*);;
-	*);;
-*);;
+<= rrel_emotions:
+    concept_interest;
+
+<= rrel_sphere:
+    concept_sphere_public;
+
+<= rrel_position:
+    concept_celebrity;
+
+<= rrel_animal_order:
+    concept_carnivora_order;
+
+<= nrel_possession:
+    concept_appearance;
+	concept_psyche;
+	concept_character;
+	concept_individuality;
+	concept_authority;
+
+<= nrel_render:
+    concept_influence;
+
+Kylie_Jenner => nrel_gaining:
+    [Высокий авторитет в обществе.]  (* <- lang_ru;; *);
+    [High prestige in society.] (* <- lang_en;; *);;      
+
+Kylie_Jenner => nrel_appearance: 
+    [Гармоничная внешность, красивые формы, ярко выраженные черты лица. ]  (* <- lang_ru;; *);
+    [Harmonious appearance, beautiful forms, pronounced facial features.] (* <- lang_en;; *);;
+
+Kylie_Jenner => nrel_division:
+    [Как инфлюенсер кайли Дженнер оказывает влияние в бьюти мире.]  (* <- lang_ru;; *);
+    [How influencer Kylie Jenner is making an impact in the beauty world.] (* <- lang_en;; *);;    

@@ -1,0 +1,29 @@
+concept_sphere_civil <- sc_node_not_relation;;
+
+<- concept_sphere; 
+concept_sphere_civil => nrel_main_idtf:
+[Гражданская сфера] (*<-lang_ru;;*);
+[sphere_civil] (*<-lang_en;;*);;
+
+concept_sphere_civil <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Гражданская сфера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_sphere_civil.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_sphere_civil <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. ( Гражданская сфера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Так что термины «гражданская сфера» или «срез» являются более адекватными смыслу того, что называют «гражданским обществом»).](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;

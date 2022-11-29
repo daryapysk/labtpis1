@@ -1,0 +1,18 @@
+concept_sphere_public <- sc_node_not_relation;;
+
+<- concept_sphere; 
+
+concept_sphere_public => nrel_main_idtf:
+[Публичная сфера] (*<-lang_ru;;*);
+[sphere] (*<-lang_en;;*);;
+
+concept_sphere_public <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Публичная сфера)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_sphere_public.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;

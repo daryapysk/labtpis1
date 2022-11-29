@@ -11,7 +11,8 @@ Baba_Jaga
    [Baba_Jaga]
    (* <- lang_en;; *);
 
-<= nrel_division: personage;
+string -> 250;;
+Baba_Jaga => nrel_weight: 250;;
 
 <-rrel_key_sc_element:...
 (*

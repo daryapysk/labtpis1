@@ -1,0 +1,29 @@
+rrel_emotions
+<- sc_node_role_relation;
+=>nrel_main_idtf:
+  [сфера_влияния'](* <- lang_ru;; *);
+  [sphere'](* <- lang_eng;; *);;
+
+rrel_emotions <- rrel_key_sc_element:... 
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf: 
+    [Опр. (Эмоции')](*<- lang_ru;;*);
+    [Def. (emotions')](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example: 
+            [эмоции' — отношение, какие эмоции вызывает персона.](*<- lang_ru;;*);; 
+        -> rrel_example: 
+            [emotions' — is a relation showing which emotions person can feel.](*<- lang_en;;*);;
+    *);;
+*);;
+
+rrel_emotions
+=>nrel_first_domain:concept_person;
+=>nrel_second_domain:concept_emotions;
+
+<- binary_relation ;
+<- antireflexive_relation ;
+<- antitransitive_relation ;;

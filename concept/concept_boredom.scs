@@ -1,0 +1,30 @@
+concept_boredom <- sc_node_not_relation;;
+
+<- concept_emotions; 
+
+concept_boredom => nrel_main_idtf:
+[Скука] (*<-lang_ru;;*);
+[boredom] (*<-lang_en;;*);;
+
+concept_boredom <- rrel_key_sc_element: ...
+(*
+<- definition;;
+=> nrel_main_idtf:
+	[Опр. (Скука)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		->rrel_example: "file://HTML/concept_boredom.html"(*<-lang_ru;;=>nrel_format:format_html;;*);;
+	*);;
+*);;
+
+concept_boredom <- rrel_key_sc_element: ...
+(*
+<- statement;;
+=> nrel_main_idtf:
+	[Утв. (Скука)] (*<-lang_ru;;*);;
+<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example:
+		[Основаниями для скуки выступают, прежде всего, полное отсутствие интереса.](*<- lang_ru;; =>nrel_format: format_html;;*);;
+	*);;
+*);;
