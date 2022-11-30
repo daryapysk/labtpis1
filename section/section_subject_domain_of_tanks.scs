@@ -44,7 +44,7 @@ section_subject_domain_of_persons = [*
 	-> rrel_explored_relation:
 	nrel_appearance;
 	nrel_impact;
-	rrel_sphere
+	rrel_sphere;
 	nrel_division;
 	nrel_gaining;
     nrel_possession;
