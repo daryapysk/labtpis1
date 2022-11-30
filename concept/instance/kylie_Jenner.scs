@@ -26,10 +26,10 @@ Kylie_Jenner
 	concept_authority;
 
 <= nrel_render:
-    concept_influence;
+    concept_influence;;
 
 Kylie_Jenner => nrel_gaining:
-    [Высокий авторитет в обществе.]  (* <- lang_ru;; *);
+    [Высокий авторитет в обществе.] (* <- lang_ru;; *);
     [High prestige in society.] (* <- lang_en;; *);;      
 
 Kylie_Jenner => nrel_appearance: 

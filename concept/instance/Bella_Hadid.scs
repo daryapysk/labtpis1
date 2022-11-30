@@ -26,7 +26,7 @@ Bella_Hadid
 	concept_authority;
 
 <= nrel_render:
-    concept_influence;
+    concept_influence;;
 
 Bella_Hadid => nrel_gaining:
     [Высокий авторитет в обществе.]  (* <- lang_ru;; *);

@@ -26,7 +26,7 @@ Aleksandra_Zhmyrko
 	concept_authority;
 
 <= nrel_render:
-    concept_influence;
+    concept_influence;;
 
 Aleksandra_Zhmyrko => nrel_gaining:
     [Высокий авторитет в учебном процессе.]  (* <- lang_ru;; *);
