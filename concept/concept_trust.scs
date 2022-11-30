@@ -1,7 +1,5 @@
 concept_trust <- sc_node_not_relation;;
 
-<- concept_emotions;
-
 concept_trust => nrel_main_idtf:
 [Доверие] (*<-lang_ru;;*);
 [trust] (*<-lang_en;;*);;
