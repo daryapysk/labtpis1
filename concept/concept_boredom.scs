@@ -1,7 +1,5 @@
 concept_boredom <- sc_node_not_relation;;
 
-<- concept_emotions; 
-
 concept_boredom => nrel_main_idtf:
 [Скука] (*<-lang_ru;;*);
 [boredom] (*<-lang_en;;*);;

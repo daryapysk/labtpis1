@@ -1,6 +1,5 @@
 concept_sphere_public <- sc_node_not_relation;;
 
-<- concept_sphere; 
 
 concept_sphere_public => nrel_main_idtf:
 [Публичная сфера] (*<-lang_ru;;*);

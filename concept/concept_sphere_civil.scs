@@ -1,6 +1,5 @@
 concept_sphere_civil <- sc_node_not_relation;;
 
-<- concept_sphere; 
 concept_sphere_civil => nrel_main_idtf:
 [Гражданская сфера] (*<-lang_ru;;*);
 [sphere_civil] (*<-lang_en;;*);;

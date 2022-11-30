@@ -1,7 +1,5 @@
 concept_interest <- sc_node_not_relation;;
 
-<- concept_emotions; 
-
 concept_interest => nrel_main_idtf:
 [Интерес] (*<-lang_ru;;*);
 [interest] (*<-lang_en;;*);;

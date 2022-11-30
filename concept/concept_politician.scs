@@ -1,7 +1,5 @@
 concept_politician <- sc_node_not_relation;;
 
-<- concept_influencer;
-
 concept_politician => nrel_main_idtf:
 [Политик] (*<-lang_ru;;*);
 [politician] (*<-lang_en;;*);;

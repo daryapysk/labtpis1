@@ -1,7 +1,5 @@
 concept_celebrity <- sc_node_not_relation;;
 
-<- concept_influencer;
-
 concept_celebrity => nrel_main_idtf:
 [Селебрити] (*<-lang_ru;;*);
 [Celebrity] (*<-lang_en;;*);;
