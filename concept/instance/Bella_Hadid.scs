@@ -1,0 +1,41 @@
+Bella_Hadid
+<- concept_person;
+<- concept_human;
+=> nrel_main_idtf:
+	   [Белла Хадид](* <- lang_ru;; *);
+       [Bella Hadid](* <-lang_en;; *);
+
+=> nrel_note:
+   [Белла Хадид - известна во всём мире модель.]
+   (* <- lang_ru;; *);
+
+<= rrel_emotions:
+    concept_interest;
+
+<= rrel_sphere:
+    concept_sphere_public;
+
+<= rrel_position:
+    concept_celebrity;
+
+<= nrel_possession:
+    concept_appearance;
+	concept_psyche;
+	concept_character;
+	concept_individuality;
+	concept_authority;
+
+<= nrel_render:
+    concept_influence;
+
+Bella_Hadid => nrel_gaining:
+    [Высокий авторитет в обществе.]  (* <- lang_ru;; *);
+    [High prestige in society.] (* <- lang_en;; *);;      
+
+Bella_Hadid => nrel_appearance: 
+    [Гармоничная внешность, красивые формы, ярко выраженные черты лица,лисий взгляд. ]  (* <- lang_ru;; *);
+    [Harmonious appearance, beautiful forms, pronounced facial features.] (* <- lang_en;; *);;
+
+Bella_Hadid => nrel_division:
+    [Как инфлюенсер Белла Хадид оказывает влияние в фэшн индустрии.]  (* <- lang_ru;; *);
+    [How influencer Bella Hadid is making an impact in fashion world.] (* <- lang_en;; *);;    

@@ -1,26 +1,41 @@
 Obama
-<- concept_impression;
-
+<- concept_person;
+<- concept_human;
 => nrel_main_idtf:
-   [Обама]
-   (* <- lang_ru;; *);
-=> nrel_idtf:
-   [Обама]
-   (* <- lang_ru;; *);
-=> nrel_main_idtf:
-   [Obama]
-   (* <- lang_en;; *);
+	   [Обама](* <- lang_ru;; *);
+       [Obama](* <-lang_en;; *);
 
-<= nrel_division: concept_politician;
-=> nrel_definition: Chaleric;
+=> nrel_note:
+   [Обама - один из президентов Америки]
+   (* <- lang_ru;; *);
 
-<-rrel_key_sc_element:...
-(*
-	<-definition;;
-	=>nrel_main_idtf:
-		[Опр. Обама](*<-lang_ru;;*);;
-	<=nrel_sc_text_translation:...
-	(*
-		->rrel_example: [Обама - один из президентов США.](*<-lang_ru;;*);;
-	*);;
-*);;
+<= rrel_emotions:
+    concept_interest;
+
+<= rrel_sphere:
+    concept_sphere_civil;
+
+<= rrel_position:
+    concept_politician;
+
+<= nrel_possession:
+    concept_appearance;
+	concept_psyche;
+	concept_character;
+	concept_individuality;
+	concept_authority;
+
+<= nrel_render:
+    concept_influence;
+
+Obama => nrel_gaining:
+    [Высокий авторитет в обществе.]  (* <- lang_ru;; *);
+    [High prestige in society.] (* <- lang_en;; *);;      
+
+Obama => nrel_appearance: 
+    [Высокий мужчина средних лет, спортивное телосложение тёмный цвет кожи. ]  (* <- lang_ru;; *);
+    [Tall middle-aged man, athletic build dark skin color.] (* <- lang_en;; *);;
+
+Obama => nrel_division:
+    [Как политик оказал влияние на развитие Америки.]  (* <- lang_ru;; *);
+    [How a Politician Influenced America's Development.] (* <- lang_en;; *);;    

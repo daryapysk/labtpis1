@@ -1,0 +1,41 @@
+Aleksandra_Zhmyrko
+<- concept_person;
+<- concept_human;
+=> nrel_main_idtf:
+	   [Александра Жмырко](* <- lang_ru;; *);
+       [Aleksandra Zhmyrko](* <-lang_en;; *);
+
+=> nrel_note:
+   [Александра Жмырко - преподаватель учебной дисциплины ТПИС.]
+   (* <- lang_ru;; *);
+
+<= rrel_emotions:
+    concept_interest;
+
+<= rrel_sphere:
+    concept_sphere_public;
+
+<= rrel_position:
+    concept_influencer;
+
+<= nrel_possession:
+    concept_appearance;
+	concept_psyche;
+	concept_character;
+	concept_individuality;
+	concept_authority;
+
+<= nrel_render:
+    concept_influence;
+
+Aleksandra_Zhmyrko => nrel_gaining:
+    [Высокий авторитет в учебном процессе.]  (* <- lang_ru;; *);
+    [High prestige at studing process.] (* <- lang_en;; *);;      
+
+Aleksandra_Zhmyrko => nrel_appearance: 
+    [Славянская выдающаяся внешность, красивые глаза. ]  (* <- lang_ru;; *);
+    [Slavic outstanding appearance, beautiful eyes.] (* <- lang_en;; *);;
+
+Aleksandra_Zhmyrko => nrel_division:
+    [Как инфлюенсер Александра Жмырко оказывает влияние в учебном процессе БГУИРа.]  (* <- lang_ru;; *);
+    [How influencer Aleksandra Zhmyrko is making influence on the educational process of BSUIR.] (* <- lang_en;; *);;    

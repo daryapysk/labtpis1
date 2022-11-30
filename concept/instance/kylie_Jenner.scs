@@ -18,9 +18,6 @@ Kylie_Jenner
 <= rrel_position:
     concept_celebrity;
 
-<= rrel_animal_order:
-    concept_carnivora_order;
-
 <= nrel_possession:
     concept_appearance;
 	concept_psyche;
