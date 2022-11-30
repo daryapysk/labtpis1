@@ -26,7 +26,7 @@ Obama
 	concept_authority;
 
 <= nrel_render:
-    concept_influence;
+    concept_influence;;
 
 Obama => nrel_gaining:
     [Высокий авторитет в обществе.]  (* <- lang_ru;; *);
