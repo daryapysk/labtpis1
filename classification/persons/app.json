@@ -1,0 +1,7 @@
+{
+    "version": 20200513,
+    "zip-command": "zip personsapp.zip personsapp\/app.json personsapp\/entities\/*.json personsapp\/intents\/*.json personsapp\/traits\/*.json personsapp\/utterances\/*.json personsapp\/composer\/*.json",
+    "name": "personsapp",
+    "lang": "ru",
+    "timezone": "America\/Los_Angeles"
+}

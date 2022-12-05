@@ -1,0 +1,34 @@
+concept_message_about_Kylie
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	  [сообщение о Кайли Дженнер]
+	  (* <- lang_ru;; *);
+      [message about Kylie ]
+	  (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	  [about_Kylie];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	   [Опр. (сообщение о Кайли Дженнер)]
+	   (* <- lang_ru;; *);;
+    => nrel_main_idtf:
+       [Def. (message about Kylie)]
+	   (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+	   [Сообщение о персоне - атомарное сообщение, которое содержит Кайли Дженнер, описание которого нужно найти.]
+		   (* <- lang_ru;; *);;
+        -> rrel_example:
+	   [Kylie message - an atomic message that contains the Kylie whose description is to be found.]
+		   (* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;
+	*);;

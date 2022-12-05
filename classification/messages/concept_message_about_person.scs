@@ -1,0 +1,34 @@
+concept_message_about_persons
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	  [сообщение о персоне]
+	  (* <- lang_ru;; *);
+      [message aboutpersons]
+	  (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	  [about_persons];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	   [Опр. (сообщение о персоне)]
+	   (* <- lang_ru;; *);;
+    => nrel_main_idtf:
+       [Def. (message about about person)]
+	   (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+	   [Сообщение о персоне - атомарное сообщение, которое содержит персона, описание которого нужно найти.]
+		   (* <- lang_ru;; *);;
+        -> rrel_example:
+	   [person message - an atomic message that contains the person whose description is to be found.]
+		   (* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;
+	*);;

@@ -1,0 +1,34 @@
+concept_message_about_appearance
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	  [сообщение о внешности]
+	  (* <- lang_ru;; *);
+      [message about about appearance]
+	  (* <- lang_en;; *);
+=> nrel_wit_ai_idtf:
+	  [about_appearance];
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+	   [Опр. (сообщение о внешности)]
+	   (* <- lang_ru;; *);;
+    => nrel_main_idtf:
+       [Def. (message about about appearance)]
+	   (* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+	   [Сообщение о внешности - атомарное сообщение, которое содержит внешность, описание которой нужно найти.]
+		   (* <- lang_ru;; *);;
+        -> rrel_example:
+	   [Appearance message - an atomic message that contains the appearance whose description is to be found.]
+		   (* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_atomic_message
+		};;
+	*);;
