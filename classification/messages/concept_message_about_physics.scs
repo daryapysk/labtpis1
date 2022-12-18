@@ -32,5 +32,3 @@ concept_message_about_physics
 			concept_atomic_message
 		};;
 	*);;
-	client-secret=__sdmx-client__
-s2s-secret=__s2s-context__
